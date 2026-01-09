@@ -1,129 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0                <div class="skill-                <div class="skill-card">
-                    <img src="assets/logos/postman-logo.png" alt="Postman Logo" class="skill-logo">
-                    <h4>Postman</h4>
-                </div>    <title>Darryl - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darryl Rayhananta Adenan | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="nav-container">
-                <div class="gradient-text">Portfolio</div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link">Beranda</a></li>
-                    <li><a href="#about" class="nav-link">Tentang</a></li>
-                    <li><a href="#projects" class="nav-link">Proyek</a></li>
-                    <li><a href="#skills" class="nav-link">Keterampilan</a></li>
-                    <li><a href="#contact" class="nav-link">Kontak</a></li>
-                </ul>
-                <button class="menu-toggle">☰</button>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Darryl<span class="highlight">.dev</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Kontak</a>
             </div>
+            <button class="menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg">
-        <div class="container">
+    <section id="home" class="hero">
+        <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="fade-in">Darryl Rayhananta Adenan</h1>
-                <p class="subtitle fade-in stagger-1">Sistem dan Teknologi Informasi</p>
-                <p class="description fade-in stagger-2">
-                    Saya adalah mahasiswa yang memiliki minat di bidang informatika, 
-                    dengan fokus pada analisis data dan pengembangan website. 
-                    Selalu berusaha untuk belajar dan berkontribusi dalam proyek-proyek inovatif.
+                <span class="greeting">Halo, Saya</span>
+                <h1 class="hero-title">Darryl Rayhananta Adenan</h1>
+                <h2 class="hero-subtitle">Mahasiswa <span class="highlight-text">Sistem & Teknologi Informasi</span></h2>
+                <p class="hero-description">
+                    Membangun solusi digital yang efisien, aman, dan inovatif. 
+                    Saya menggabungkan pemahaman sistem yang mendalam dengan teknologi terkini 
+                    untuk menciptakan dampak nyata.
                 </p>
-                <div class="btn-group fade-in stagger-3">
-                    <a href="#projects" class="btn-primary">Lihat Proyek Saya</a>
-                    <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Portfolio <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/darrylrayhananta" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Proyek Selesai</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Tahun Coding</span>
+                    </div>
                 </div>
             </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-blob"></div>
+                <img src="foto1.jpg" alt="Darryl Rayhananta Adenan" class="hero-img">
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-white">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="gradient-text">Tentang Saya</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="foto1.jpg" alt="Profile">
-                </div>
-                <div class="about-text">
-                    <p>
-                        Sebagai mahasiswa Sistem dan Teknologi Informasi di Institut Teknologi Bandung, 
-                        saya memiliki ketertarikan yang mendalam terhadap dunia teknologi, khususnya dalam 
-                        pengembangan website dan analisis data. Saya percaya bahwa teknologi dapat 
-                        menjadi katalisator untuk memecahkan masalah kompleks di masyarakat.
-                    </p>
-                    <p>
-                        Pengalaman saya dalam organisasi kemahasiswaan dan partisipasi dalam berbagai 
-                        proyek akademik telah membentuk saya menjadi individu yang mampu bekerja sama 
-                        dalam tim, berpikir kritis, dan selalu haus akan pengetahuan baru. Saya juga 
-                        aktif mengikuti workshop dan lomba untuk meningkatkan kompetensi saya.
-                    </p>
-                    <p>
-                        Saat ini; saya sedang mengeksplorasi bidang data dan machine learning, 
-                        dengan harapan dapat berkontribusi dalam menciptakan solusi teknologi yang aman 
-                        dan cerdas untuk masa depan yang lebih baik.
-                    </p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Kenali saya lebih jauh</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-gray-100">
-        <div class="container">
-            <h2 class="gradient-text">Proyek Saya</h2>
-            <div class="grid grid-cols-3">
-                <!-- Project Card 1 -->
-                <div class="card card-hover">
-                    <img src="/assets/spakbor.png" alt="Project 1">
-                    <div class="card-content">
-                        <h3>Spakbor Hills</h3>
-                        <p>Sebuah game rpg berbasis java untuk memenuhi tugas besar Pemrograman Berbasis Objek.</p>
-                        <div class="tag-group">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <p>
+                        Sebagai mahasiswa <strong>Sistem dan Teknologi Informasi</strong> di Institut Teknologi Bandung, 
+                        saya memiliki passion yang kuat dalam memecahkan masalah kompleks melalui teknologi.
+                    </p>
+                    <p>
+                        Fokus utama saya mencakup <strong>Software Engineering, Data Analysis, dan System Design</strong>. 
+                        Saya percaya bahwa kode yang baik bukan hanya yang "jalan", tapi juga yang <em>maintainable</em>, 
+                        <em>scalable</em>, dan memberikan <em>user experience</em> terbaik.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Analitis & Problem Solver</li>
+                        <li><i class="fas fa-check-circle"></i> Adaptif terhadap Teknologi Baru</li>
+                        <li><i class="fas fa-check-circle"></i> Team Player & Komunikatif</li>
+                    </ul>
                 </div>
-                
-                <!-- Project Card 2 -->
-                <div class="card card-hover">
-                    <img src="/assets/Ecoband.png" alt="Project 2">
-                    <div class="card-content">
-                        <h3>EcoBand</h3>
-                        <p>Wearable IoT berupa gelang pintar untuk memantau kualitas udara dan suhu secara real-time dengan notifikasi otomatis.</p>
-                        <div class="tag-group">
-                            <span class="tag">C++</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">SQL</span>
-                        </div>
+                <div class="about-cards">
+                    <div class="card-info">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Dev</h3>
+                        <p>Fullstack Development</p>
                     </div>
-                </div>
-                
-                <!-- Project Card 3 -->
-                <div class="card card-hover">
-                    <img src="/assets/turator.png" alt="Project 3">
-                    <div class="card-content">
-                        <h3>Turator</h3>
-                        <p>Website pembelajaran online dengan fitur video conference, quiz interaktif, dan progress tracking.</p>
-                        <div class="tag-group">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">SQL</span>
-                        </div>
+                    <div class="card-info">
+                        <i class="fas fa-database"></i>
+                        <h3>Data</h3>
+                        <p>Analysis & Mining</p>
+                    </div>
+                    <div class="card-info">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile</h3>
+                        <p>App Development</p>
+                    </div>
+                    <div class="card-info">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security</h3>
+                        <p>System Security</p>
                     </div>
                 </div>
             </div>
@@ -131,110 +121,303 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-white">
+    <section id="skills" class="section bg-alt">
         <div class="container">
-            <h2 class="gradient-text">Keterampilan</h2>
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Teknologi yang saya gunakan</p>
+            </div>
             
-            <div class="grid grid-cols-4">
-                <div class="skill-card">
-                    <img src="assets/logos/python-logo.png" alt="Python Logo" class="skill-logo">
-                    <h4>Python</h4>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>JavaScript</span>
+                        <span>Go</span>
+                        <span>SQL</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/java-logo.png" alt="Java Logo" class="skill-logo">
-                    <h4>Java</h4>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/c-logo.png" alt="C Logo" class="skill-logo">
-                    <h4>C</h4>
+                <div class="skill-category">
+                    <h3>Backend & DB</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/sql-logo.png" alt="SQL Logo" class="skill-logo">
-                    <h4>SQL</h4>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>Linux</span>
+                        <span>Postman</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/react-logo.png" alt="React Logo" class="skill-logo">
-                    <h4>React.js</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">12 Karya terbaik yang pernah saya buat</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Smart Campus IoT</h3>
+                    <p class="project-desc">Sistem monitoring lingkungan kampus berbasis IoT menggunakan Arduino dan dashboard Python.</p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>Arduino</li>
+                        <li>MQTT</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/nodejs-logo.png" alt="Node.js Logo" class="skill-logo">
-                    <h4>Node.js</h4>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">E-Learning Platform</h3>
+                    <p class="project-desc">Platform pembelajaran online dengan fitur video streaming, kuis interaktif, dan tracking progres.</p>
+                    <ul class="project-tech">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/git-logo.png" alt="Git Logo" class="skill-logo">
-                    <h4>Git</h4>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Spakbor Hills RPG</h3>
+                    <p class="project-desc">Game RPG berbasis Java dengan sistem inventory kompleks dan battle mechanics yang strategis.</p>
+                    <ul class="project-tech">
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                        <li>OOP</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/docker-logo.png" alt="Docker Logo" class="skill-logo">
-                    <h4>Docker</h4>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Hospital Management</h3>
+                    <p class="project-desc">Sistem informasi manajemen rumah sakit untuk pencatatan pasien, dokter, dan rekam medis.</p>
+                    <ul class="project-tech">
+                        <li>Java Spring</li>
+                        <li>MySQL</li>
+                        <li>Thymeleaf</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/figma-logo.png" alt="Figma Logo" class="skill-logo">
-                    <h4>Figma</h4>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Sentiment Analysis</h3>
+                    <p class="project-desc">Tool analisis sentimen sosial media menggunakan NLP untuk mendeteksi opini publik.</p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>NLTK</li>
+                        <li>Scikit-learn</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/vscode-logo.png" alt="VS Code Logo" class="skill-logo">
-                    <h4>VS Code</h4>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Secure Voting System</h3>
+                    <p class="project-desc">Sistem pemungutan suara terdesentralisasi berbasis Blockchain untuk transparansi data.</p>
+                    <ul class="project-tech">
+                        <li>Solidity</li>
+                        <li>Web3.js</li>
+                        <li>Ethereum</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/html-logo.png" alt="HTML Logo" class="skill-logo">
-                    <h4>HTML</h4>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Inventory App</h3>
+                    <p class="project-desc">Aplikasi mobile cross-platform untuk manajemen stok barang gudang realtime.</p>
+                    <ul class="project-tech">
+                        <li>Flutter</li>
+                        <li>Firebase</li>
+                        <li>Dart</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <img src="assets/logos/css-logo.png" alt="CSS Logo" class="skill-logo">
-                    <h4>CSS</h4>
+
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Traffic Simulator</h3>
+                    <p class="project-desc">Simulasi pengaturan lampu lalu lintas adaptif berdasarkan kepadatan kendaraan.</p>
+                    <ul class="project-tech">
+                        <li>C++</li>
+                        <li>Algorithm</li>
+                        <li>Simulation</li>
+                    </ul>
                 </div>
+
+                <!-- Project 9 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">M-Banking API</h3>
+                    <p class="project-desc">RESTful API aman untuk transaksi perbankan dengan fitur transfer, mutasi, dan pembayaran.</p>
+                    <ul class="project-tech">
+                        <li>Go</li>
+                        <li>PostgreSQL</li>
+                        <li>JWT</li>
+                    </ul>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Cloud File Manager</h3>
+                    <p class="project-desc">Aplikasi manajemen file berbasis cloud yang terintegrasi dengan layanan AWS S3.</p>
+                    <ul class="project-tech">
+                        <li>AWS S3</li>
+                        <li>React</li>
+                        <li>Express</li>
+                    </ul>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Network Packet Sniffer</h3>
+                    <p class="project-desc">Tool keamanan jaringan untuk menganalisis trafik paket data dalam jaringan lokal.</p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>Scapy</li>
+                        <li>Networking</li>
+                    </ul>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <a href="https://github.com/darrylrayhananta" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="project-title">Task Scheduler</h3>
+                    <p class="project-desc">Aplikasi penjadwalan tugas otomatis dengan algoritma prioritas dan notifikasi email.</p>
+                    <ul class="project-tech">
+                        <li>Node.js</li>
+                        <li>Redis</li>
+                        <li>Cron</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                <a href="https://github.com/darrylrayhananta" target="_blank" class="btn btn-outline">Lihat Repositori Lainnya</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-100">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="gradient-text">Hubungi Saya</h2>
-            <div class="form-container">
-                <form class="form">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Nama</label>
-                        <input type="text" id="name" class="form-input" placeholder="Masukkan nama Anda">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <h2 class="section-title">Mari Terhubung</h2>
+                    <p>Saya selalu terbuka untuk diskusi mengenai teknologi, peluang kolaborasi, atau sekadar menyapa.</p>
+                    <div class="contact-links">
+                        <a href="mailto:darryl@student.edu" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            darryl@student.edu
+                        </a>
+                        <a href="https://linkedin.com/in/darryl" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            Darryl Rayhananta
+                        </a>
+                        <a href="https://github.com/darrylrayhananta" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            darrylrayhananta
+                        </a>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="Masukkan email Anda">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message">Pesan</label>
-                        <textarea id="message" class="form-textarea" placeholder="Tulis pesan Anda"></textarea>
-                    </div>
-                    <button type="submit" class="form-submit">Kirim Pesan</button>
-                </form>
-                
-                <!-- Social Links -->
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/darryl-rayhananta/">
-                        <img src="assets/social/linkedin-logo.png" alt="LinkedIn" class="social-logo">
-                    </a>
-                    <a href="https://www.instagram.com/darrylrayhananta/">
-                        <img src="assets/social/instagram-logo.png" alt="Instagram" class="social-logo">
-                    </a>
-                    <a href="https://wa.me/087782385518">
-                        <img src="assets/social/whatsapp-logo.png" alt="WhatsApp" class="social-logo">
-                    </a>
-                    <a href="mailto:darryl152005@gmail.com">
-                        <img src="assets/social/email-logo.png" alt="Email" class="social-logo">
-                    </a>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" placeholder="Nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="email@anda.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea rows="4" placeholder="Apa yang ingin Anda diskusikan?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Darryl Rayhananta Adenan. All rights reserved.</p>
+            <p>&copy; 2026 Darryl Rayhananta Adenan. Dibuat dengan  dan .</p>
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
