@@ -512,40 +512,6 @@ img {
     font-size: 1.3rem;
 }
 
-.contact-form {
-    background: var(--bg-secondary);
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    font-size: 0.9rem;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    background: var(--bg-primary);
-    border: 1px solid var(--bg-tertiary);
-    border-radius: 4px;
-    color: var(--text-primary);
-    font-family: var(--font-body);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-}
-
 footer {
     text-align: center;
     padding: 2rem 0;
